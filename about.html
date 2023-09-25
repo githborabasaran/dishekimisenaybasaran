@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Diş Hekimi Nazire Şenay Başaran - Hakkında</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkolivegreen;
+            margin: 0;
+            padding: 0;
+        }
+
+        section#about {
+            background-color: darkolivegreen;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2.text-uppercase {
+            text-align: center;
+            font-size: 24px;
+            color: darkorange;
+        }
+
+        hr.star-light {
+            border-color: red;
+        }
+
+        #about-text {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #about-text .left,
+        #about-text .right {
+            flex: 1;
+        }
+
+        #about-text .text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: darkorange;
+        }
+
+        /* New containers and links */
+
+        .container {
+            background-color: darkorange;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid red;
+        }
+
+        .container a {
+            text-decoration: none;
+            color: darkolivegreen;
+            font-weight: bold;
+        }
+
+        .back-button {
+            background-color: darkorange;
+            color: darkolivegreen;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: white;
+            color: darkorange;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="about">
+        <h2 class="text-uppercase">Hakkında</h2>
+        <hr class="star-light">
+        <div id="about-text" class="clearfix">
+            <div class="left">
+                <p class="text">
+                    Dt. Şenay Başaran 1970 Amasya doğumludur. İlk, orta ve lise eğitimini Amasya'da, lisans üst
+                    eğitimini İstanbul Üniversitesi Diş Hekimliği Fakültesinde 1992 yılında tamamlayarak diş hekimi
+                    ünvanını almıştır.
+                </p>
+            </div>
+            <div class="right">
+                <p class="text">
+                    1992-1994 Yılları arasında Ankara'da özel poliklinikte çalışmıştır. Mesleki çalışmalarına 1995
+                    yılından itibaren Amasya'da muayenehanesinde devam etmektedir. Evli ve iki çocuk annesidir.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="container" style="display: flex; align-items: center;">
+            <a href="#container2" style="flex: 1;">İstanbul (Çapa) Diş Hekimliği Fakültesi</a>
+            <img src="008.dis_hekimligi_logo.png" alt="İstanbul (Çapa) Diş Hekimliği Fakültesi Logo" width="150px">
+            <p style="flex: 1; text-align: right;">1987-1992</p>
+        </div>
+
+        <div class="container" style="display: flex; align-items: center;" id="container2">
+            <a href="#container3" style="flex: 1;">Ankara Özel Klinik</a>
+
+            <p style="flex: 1; text-align: right;">1992-1994</p>
+        </div>
+
+        <div class="container" style="display: flex; align-items: center;" id="container2">
+            <a href="#container4" style="flex: 1;">Kendi Muayenehanesi(Amasya)</a>
+
+            <p style="flex: 1; text-align: right;">1994-2023</p>
+        </div>
+
+
+
+
+
+        <button class="back-button" onclick="navigateToMainPage()">Ana Sayfaya Dön</button>
+
+
+
+
+    </section>
+
+    <script>
+
+        function navigateToMainPage() {
+
+            window.location.href = 'indexdentist.html';
+        }
+
+    </script>
+
+</body>
+
+
+
+</html>

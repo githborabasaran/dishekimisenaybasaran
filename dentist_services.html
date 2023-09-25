@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diş Hekimimizin Gerçekleştirdiği Servisler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkolivegreen;
+            color: darkorange;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .service-category {
+            background-color: darkorange;
+            color: darkolivegreen;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a.button {
+            display: inline-block;
+            background-color: darkorange;
+            color: darkolivegreen;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a.button:hover {
+            background-color: #fff;
+            color: darkorange;
+        }
+
+        .navigation-buttons {
+            text-align: center;
+            margin-top: 20px;
+            background-color: darkorange;
+            color: darkolivegreen;
+        }
+
+        .service-button {
+            background-color: darkolivegreen;
+            color: darkorange;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .service-button:hover {
+            background-color: darkorange;
+            color: darkolivegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Diş Hekimimizin Gerçekleştirdiği Servisler</h1>
+
+    <div class="service-category">
+        <h2>Estetik Diş Hekimliği</h2>
+        <ul>
+            <li><a href="DişBeyazlatma.html" class="button">Diş Beyazlatma</a></li>
+            <li><a href="Gülüş_Tasarımı.html" class="button">Gülüş Tasarımı</a></li>
+            <li><a href="Diş_Kaplama.html" class="button">Diş Kaplama</a></li>
+            <li><a href="Porselen_Kaplama.html" class="button">Porselen Kaplama</a></li>
+        </ul>
+    </div>
+
+    <div class="service-category">
+        <h2>Restoratif Diş Tedavisi</h2>
+        <ul>
+            <li><a href="DoldurmaveRestorasyon.html" class="button">Doldurma ve Restorasyon</a></li>
+            <li><a href="Diş_Tamiri.html" class="button">Diş Tamiri</a></li>
+            <li><a href="Kırık_Diş_Tamiri.html" class="button">Kırık Diş Tamiri</a></li>
+        </ul>
+    </div>
+
+    <div class="service-category">
+        <h2>Oral Cerrahi ve İmplant Tedavisi</h2>
+        <ul>
+            <li><a href="Kanal_Tedavi.html" class="button">Kanal Tedavi</a></li>
+            <li><a href="İmplant_Tedavisi.html" class="button">İmplant Tedavisi</a></li>
+            <li><a href="İmplant_Cerrahisi.html" class="button">İmplant Cerrahisi</a></li>
+            <li><a href="İmplant_Üstü_Protez.html" class="button">İmplant Üstü Protez</a></li>
+        </ul>
+    </div>
+
+    <div class="service-category">
+        <h2>Diş Bakım ve Muayene</h2>
+        <ul>
+            <li><a href="Diş_Temizleme.html" class="button">Diş Temizleme</a></li>
+            <li><a href="Diş_Muayenesi.html" class="button">Diş Muayenesi</a></li>
+            <li><a href="Süt_Dişleri_Tedavisi.html" class="button">Süt Dişleri Tedavisi</a></li>
+            <li><a href="Diş_Eti_Hastalıklarının_Tedavisi.html" class="button">Diş Eti Hastalıklarının Tedavisi</a></li>
+            <li><a href="Diş_Eti_Bozuklukları.html" class="button">Diş Eti Bozuklukları</a></li>
+        </ul>
+    </div>
+
+    <!-- New "Diğer Tedaviler" section -->
+    <div class="service-category">
+        <h2>Diğer Tedaviler</h2>
+        <ul>
+            <li><a href="Diş_Çekimi.html" class="button">Diş Çekimi</a></li>
+            <li><a href="Protez_Diş.html" class="button">Protez Diş</a></li>
+            <li><a href="Dolgu.html" class="button">Dolgu</a></li>
+
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="service-button" onclick="scrollToTop()">Başa Dön</button>
+        <button class="service-button" onclick="navigateToMainPage()">Ana Sayfa'ya Git</button>
+    </div>
+
+    <script>
+        const listItems = document.querySelectorAll('li');
+        let currentIndex = 0;
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function navigateToMainPage() {
+            window.location.href = 'indexdentist.html';
+        }
+    </script>
+</body>
+
+</html>

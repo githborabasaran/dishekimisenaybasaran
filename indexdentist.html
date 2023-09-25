@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Diş Hekimi Şenay Başaran</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Lato:wght@400;700&family=Libre+Franklin:wght@100&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Lato:wght@400;700&family=Libre+Franklin:wght@100&family=Montserrat:wght@400;700&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styledentist.css">
+
+    <style>
+        /* CSS for the image next to the title */
+        img.icon {
+            width: 24px;
+            /* Adjust the width as needed */
+            height: 24px;
+            /* Adjust the height as needed */
+            vertical-align: middle;
+            /* Align the image vertically with text */
+            margin-right: 5px;
+            /* Add some spacing to the right of the image */
+            color: darkorange;
+            background-color: darkolivegreen;
+        }
+
+        .map-link {
+            color: darkorange;
+        }
+    </style>
+
+    <style>
+        @media (max-width: 992px) {
+            #nav-links ul {
+                display: none;
+            }
+
+            #nav-links .nav-icon {
+                display: block;
+            }
+
+            #nav-links.responsive ul {
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="container clearfix">
+            <div id="logo-box">
+                <a href="#" class="logo text-uppercase">
+                    Diş Hekimi Şenay Başaran
+                    <i class="fa-duotone fa-tooth fa-xs"
+                        style="--fa-primary-color: #ff2600; --fa-primary-opacity: 1; --fa-secondary-color: #e32400; --fa-secondary-opacity: 04;"></i>
+                </a>
+            </div>
+
+
+            <div id="nav-links" class="responsive">
+                <ul>
+                    <li class="nav-item text-uppercase nav-icon">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item text-uppercase">
+                        <a href="#" class="nav-link" onclick="scrollToSection('about')">
+                            Portfolyo
+                        </a>
+                    </li>
+
+                    <li class=" nav-item text-uppercase">
+                        <a href="#" class="nav-link" onclick="scrollToSection('portfolio')">
+                            Hakkında
+                        </a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a href="#" class="nav-link" onclick="scrollToSection('contact')">
+                            İletişim
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <img id="profile-image" class="img-fluid" src="dentist-woman.jpeg" alt="">
+            <h1 class="text-uppercase">Diş Hekimi</h1>
+            <hr class="star-light">
+            <h2>Diş Çekimi - Diş Tasarımı - Diş Tedavisi</h2>
+        </div>
+    </header>
+
+    <section id="portfolio">
+        <div class=" container">
+            <h2 class="text-uppercase">
+                İşyeri Görselleri
+            </h2>
+            <hr class=" star-dark">
+
+
+            <div id="portfolio-images" class="clearfix">
+
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-fluid-p" src="2017-10-02.jpeg" alt="">
+
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-fluid-p" src="Unknown.jpeg" alt="">
+
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-fluid-p" src="Unknown222.jpeg" alt="">
+
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+    </section>
+
+    <section id="about">
+        <h2 class="text-uppercase">
+            Hakkında
+        </h2>
+        <hr class="star-light">
+
+
+        <div id="about-text" class="clearfix">
+            <div class="left">
+                <p class="text">
+                    Diş Hekimi Şenay Başaran Amasya'da yaşamakta olup, muayenehanesi Amasya'da yer almaktadır.
+                </p>
+            </div>
+            <div class="right">
+                <p class="text">
+                    31 yıllık deneyim ile tüm diş tedavileri, Amasya'da işyerinde yapılmaktadır.
+                </p>
+            </div>
+
+        </div>
+
+        <button class="btn btn-outline btn-large">
+            <i class="fas fa-download"></i>
+            <a href="dentist_services.html">Şimdi Gülümsemene Önem Ver!</a>
+        </button>
+
+        <li class="nav-item text-uppercase">
+            <a href="about.html" class="nav-link">
+                <button class="nav-button">Hakkında Daha Fazla Bilgi İçin Tıkla</button>
+            </a>
+        </li>
+
+    </section>
+
+
+
+    <section id="contact">
+
+        <div class="container">
+
+            <h2 class="text-uppercase">
+
+                Bize Ulaşın
+
+            </h2>
+
+            <hr class="star-dark">
+
+            <form id="contact-form" action="process_form.php" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="İsim">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" placeholder="E-posta">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="phone" placeholder="Telefon Numarası">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Mesaj"></textarea>
+                </div>
+                <button class="btn btn-primary" id="submit-button">
+                    Gönder
+                </button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="container clearfix">
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5510961889295!2d35.82854941548426!3d40.65042597934079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40876e4d1693f999%3A0x6fa18599964d0ac5!2sDi%C5%9F%20Hekimi%20%C5%9Eenay%20Ba%C5%9Faran!5e0!3m2!1sen!2str!4v1664487649269!5m2!1sen!2str"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="col">
+
+
+                <h4 class="text-uppercase">
+
+
+
+                </h4>
+
+                <p>
+
+                    Dere, Çelebi Mehmet Cd. no:1 kat 2, 05100 Amasya Merkez/Amasya
+
+                    <a href="https://www.google.com/maps/place/Diş+Hekimi+Şenay+Başaran/@40.650426,35.8307377,15z/data=!4m6!3m5!1s0x40876e4d1693f999:0x6fa18599964d0ac5!8m2!3d40.650426!4d35.8307377!16s%2Fg%2F11c527sxnl?entry=ttu"
+                        target="_blank" class="map-link">
+                        (Haritada Görüntüle)
+                    </a>
+
+
+                </p>
+
+            </div>
+
+
+            <div class="col">
+
+                <h4 class="text-uppercase">
+
+                    Web'de Biz
+                    <br><br>
+
+                    <a href="tel:+03582184520" class="telephone">Telefon: +0358 218 45 20</a>
+
+
+
+                </h4>
+
+                <ul>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+
+                            <i class="fa-brands fa-facebook"></i>
+
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="btn btn-outline btn-social">
+
+                            <i class="fa-brands fa-twitter"></i>
+
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+
+                            <i class="fa-brands fa-linkedin"></i>
+
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+
+                            <i class="fa-brands fa-dribbble"></i>
+
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="col">
+
+                <h4 class="text-uppercase">
+
+                    Tedavi Hakkında
+
+                </h4>
+
+                <p>
+
+                    Ücretler yapılan tedaviye göre değişiklik göstermektedir. Tam bilgi için bize ulaşın.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="copyright">
+
+        <div class="container">
+
+            <small>
+
+                Copyright © Diş Hekimi Şenay Başaran | Powered by Bora Başaran 2023
+
+            </small>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+
+        $(".nav-icon").click(function () {
+
+            $("#nav-links").toggleClass("responsive");
+
+            return false;
+
+        });
+
+    </script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+    <script>
+        // Function to display a confirmation message with contact details
+        function displayConfirmation() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            const confirmationMessage = `
+            Mesajınız iletilemedi. İletişim Bilgileriniz:
+            İsim: ${name} 
+            E-posta: ${email}
+            Telefon: ${phone}
+            Mesaj: ${message}
+
+
+            *******Sekretere ulaşıp randevu almak için sayfanın en altındaki numaradan bizi hemen şimdi arayın!*******
+        `;
+
+            alert(confirmationMessage);
+
+            // You can also send this information to the secretary's phone via a different method.
+            // For example, you could send it via email or use a messaging service.
+        }
+
+        // Add a click event listener to the submit button
+        const submitButton = document.getElementById('submit-button');
+        submitButton.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the form from actually submitting
+            displayConfirmation();
+        });
+    </script>
+
+
+
+</body>
+
+</html>

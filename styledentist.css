@@ -1,0 +1,798 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 6px;
+}
+
+/*Navbar*/
+
+body {
+    font-family: "Lato", sans -serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+
+    list-style-type: none;
+}
+
+section {
+
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+
+}
+
+
+.btn-large {
+
+    font-size: 2rem;
+
+    padding: 2.2rem 1.6rem;
+
+}
+
+
+.btn {
+
+    margin-top: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    background-color: transparent;
+    color: darkorange;
+    border: 2px solid darkorange;
+    border-radius: .4 rem;
+    cursor: pointer;
+    transition: all .5s;
+
+
+
+}
+
+.btn-social {
+
+    width: 5rem;
+
+    height: 5rem;
+
+    border-radius: 50%;
+
+    font-size: 2rem;
+
+    line-height: 2rem;
+
+
+
+}
+
+.btn-outline {
+
+    color: darkorange;
+    border-color: darkorange;
+    background-color: transparent;
+
+
+}
+
+
+
+.btn-outline:hover {
+
+    color: darkorange;
+    background-color: #fff;
+
+}
+
+.btn-primary {
+
+    background-color: darkorange;
+    border-color: darkorange;
+    padding: 1.2rem 1rem;
+    color: darkolivegreen;
+
+}
+
+.btn-primary:hover {
+
+    background-color: darkorange;
+    border-color: darkorange;
+
+}
+
+.img-fluid {
+    max-width: 256px;
+    height: auto;
+}
+
+.clearfix::after {
+
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+}
+
+.col {
+
+    float: left;
+    width: 100%;
+    padding: 1rem;
+
+
+}
+
+@media (min-width:576px) {
+
+    .container {
+
+        max-width: 540px;
+
+    }
+
+    html {
+
+        font-size: 7px;
+
+
+    }
+
+}
+
+@media (min-width:768px) {
+
+    .container {
+
+        max-width: 720px;
+
+    }
+
+    html {
+
+        font-size: 8px;
+
+    }
+
+    .col {
+
+        width: 50%;
+
+    }
+
+}
+
+
+@media (min-width:992px) {
+
+    .container {
+
+        max-width: 960px;
+
+    }
+
+    html {
+
+        font-size: 9px;
+
+    }
+
+    .col {
+
+        width: 33.333%;
+
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    #nav-links ul {
+        display: none;
+    }
+
+    #nav-links .nav-icon {
+        display: block;
+    }
+
+    #nav-links.responsive ul {
+        display: block;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .container {
+
+        max-width: 1140px;
+
+    }
+
+    html {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+
+
+.text-uppercase {
+
+    text-transform: uppercase;
+
+}
+
+nav {
+    width: 100%;
+    font-family: Montserrat;
+    background-color: darkorange;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    z-index: 500;
+
+}
+
+#portfolio-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+#logo-box {
+    float: left;
+    padding-top: 0.5rem;
+
+}
+
+#logo-box .logo {
+
+    color: white;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+#nav-links {
+
+    float: right;
+
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-link {
+    color: darkolivegreen;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.4s;
+}
+
+#nav-links .nav-link:hover {
+    color: darkorange
+}
+
+#nav-links .nav-icon {
+
+    display: none;
+
+}
+
+@media (max-width:992px) {
+
+    #logo-box {
+
+        float: none;
+
+        text-align: left;
+
+    }
+
+    #nav-links {
+
+        float: none;
+
+    }
+
+    #nav-links .nav-link {
+
+        font-size: 2rem;
+
+        padding-left: 0;
+
+    }
+
+    #nav-links .nav-item {
+
+        float: none;
+
+        text-align: left;
+
+    }
+
+    #nav-links .nav-icon {
+
+        display: block;
+
+        position: absolute;
+
+        top: 10px;
+
+        right: 5px;
+
+        font-size: 3rem;
+
+    }
+
+    #nav-links.responsive li:not(:first-child) {
+
+        display: none;
+
+    }
+
+}
+
+
+
+
+/*Header*/
+
+header {
+    background-color: darkolivegreen;
+    height: 700px;
+    padding-top: calc(106px + 6rem);
+    text-align: center;
+
+}
+
+header h1 {
+    color: darkorange;
+    font-size: 6rem;
+}
+
+header h2 {
+    color: darkorange;
+    font-size: 2.6rem;
+    font-family: "Lato";
+    font-weight: 300;
+
+}
+
+hr.star-light {
+    border-color: darkorange;
+}
+
+hr.star-dark {
+    border-color: darkolivegreen;
+}
+
+.star-light,
+.star-dark {
+    border: none;
+    border-top: 0.4rem solid;
+    border-radius: 10px;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+
+}
+
+.star-light::after {
+    color: darkorange;
+    background-color: darkolivegreen;
+}
+
+.star-dark::after {
+    color: darkolivegreen;
+    background-color: white;
+}
+
+.star-light::after,
+.star-dark::after {
+    content: "\2605";
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -28px;
+    padding: 0 8px;
+}
+
+/*portfolio*/
+
+#portfolio {}
+
+#portfolio h2 {
+    font-size: 4.8rem;
+    color: darkolivegreen;
+
+}
+
+.img-fluid-p {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.portfolio-item img {
+
+    display: block;
+    border-radius: 13px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f3a412cb;
+    opacity: 1;
+    transition: opacity 0.4s;
+
+
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+    /* Zoom in the image on hover */
+}
+
+
+.img-overlay .icon {
+
+    color: darkorange;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.portfolio-item:hover .img-overlay {
+
+
+    opacity: 0.8;
+
+    border-radius: 13px;
+
+}
+
+#logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-right: 5px;
+    /* Adjust the margin as needed to position the icon */
+}
+
+.portfolio-item:hover .img-overlay {
+    opacity: 1;
+    /* Show the overlay on hover */
+}
+
+.portfolio-item .img-overlay .icon {
+    color: #fff;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s ease-in-out;
+    /* Add this line for smooth color change */
+}
+
+.portfolio-item .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    /* Change the overlay color with alpha */
+    opacity: 0;
+    /* Hide the overlay by default */
+    transition: opacity 0.3s ease-in-out;
+    /* Add this line for a smooth fade effect */
+}
+
+.portfolio-item:hover .img-overlay .icon {
+    color: darkolivegreen;
+    /* Change the icon color to green on hover */
+}
+
+
+
+/*About*/
+
+
+
+#about {
+    background-color: darkolivegreen;
+    color: darkorange;
+}
+
+#about h2 {
+
+    font-size: 4.8rem;
+
+}
+
+#about-text {
+
+    text-align: left;
+
+}
+
+#about-text .left {
+
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
+
+}
+
+#about-text .right {
+
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 5px;
+
+}
+
+#about-text .text {
+
+    font-size: 2rem;
+
+}
+
+
+@media (max-width: 992px) {
+
+    #about-text .left {
+
+        float: left;
+
+        width: 50%;
+
+        padding-right: 10px;
+
+        padding-left: 210px;
+
+    }
+
+    #about-text .right {
+
+        float: right;
+
+        width: 50%;
+
+        padding-right: 210px;
+
+        padding-left: 10px;
+
+    }
+
+}
+
+
+#contact h2 {
+
+    font-size: 4.8rem;
+    color: darkolivegreen;
+
+}
+
+#contact-form {
+
+    width: 70%;
+
+    margin: 0 auto;
+
+    text-align: left;
+
+
+}
+
+.form-group {
+
+    border-bottom: 1px solid #e9ecef;
+
+    padding-bottom: 3rem;
+
+    margin-bottom: 4rem;
+
+}
+
+.form-group input,
+.form-group textarea {
+
+    border: none;
+
+    width: 100%;
+
+    display: block;
+
+    font-size: 2.4rem;
+
+}
+
+
+
+.form-group input:focus {
+
+    outline: 0;
+
+}
+
+.form-group textarea:focus {
+
+    outline: 0;
+
+}
+
+/*Footer*/
+
+footer {
+
+    padding-top: 6rem;
+
+    padding-bottom: 6rem;
+
+    background-color: darkolivegreen;
+
+    color: #fff;
+
+    text-align: center;
+
+}
+
+footer h4 {
+
+    font-size: 2.4rem;
+
+
+
+}
+
+
+footer p {
+
+    font-size: 2rem;
+
+    margin-top: 1rem;
+
+
+}
+
+footer li {
+
+    display: inline-block;
+
+    margin-right: 1rem;
+
+}
+
+.copyright {
+
+    background-color: darkorange;
+
+    padding-top: 2.4rem;
+
+    padding-bottom: 2.4rem;
+
+    color: darkolivegreen;
+
+    text-align: center;
+
+}
+
+.telephone {
+    font-size: 1.6rem;
+    color: darkorange;
+    margin-top: 1rem;
+}
+
+
+.nav-button {
+    background-color: darkorange;
+    /* Background color of the button */
+    color: darkolivegreen;
+    /* Text color of the button */
+    border: none;
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    font-size: 1.6rem;
+    /* Font size of the button text */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Smooth hover effect */
+}
+
+.nav-button:hover {
+    background-color: white;
+    /* Change background color on hover */
+}
+
+
+
+
+/*Contact */
+
+
+
+/*
+
+font-family: 'Borel', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+
+
+font-family: 'Borel', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+*/
